@@ -1,3 +1,5 @@
+
+!Auxilliary field structure factor
 subroutine struc_factor
     use array
     use global
