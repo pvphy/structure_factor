@@ -21,8 +21,7 @@ subroutine struc_factor
                     m_z=(mi(i)*cos(ph(i)))*(mi(j)*cos(ph(j)))
                     mimj=m_x+m_y+m_z
                     rx=qx*(x(i)-x(j))/2
-                    ry=qy*(y(i)-y(j))/2
-                    !sf_A=sf_A+(complex(cos(rx+ry),sin(rx+ry)))*(mimj)        
+                    ry=qy*(y(i)-y(j))/2  
                     sf_A=sf_A+exp(complex(0.0d0,rx+ry))*(mimj)        
 
                 endif
@@ -38,7 +37,6 @@ subroutine struc_factor
                     mimj=m_x+m_y+m_z
                     rx=qx*(x(i)-x(j))/2
                     ry=qy*(y(i)-y(j))/2
-                    !sf_B_C=sf_B_C+(complex(cos(rx+ry),sin(rx+ry)))*(mimj)
                     sf_B_C=sf_B_C+exp(complex(0.0d0,rx+ry))*(mimj)        
 
                 endif
