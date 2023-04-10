@@ -262,8 +262,7 @@ subroutine matgen
 
 
 
-    call matgen_so
-    call matgen_hf_u
+    call matgen_mcmf_u
 
     do l=1,2*nos
         do k=1,2*nos
